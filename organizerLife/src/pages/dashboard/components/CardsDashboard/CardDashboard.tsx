@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Card,
   CardAction,
@@ -14,7 +13,10 @@ interface Props {
 
 export default function CardDashboard({ title, desc }: Props) {
   return (
-    <Card className="w-sm" onClick={() => {}}>
+    <Card
+      className="w-sm transition-transform duration-300 ease-in-out hover:scale-105 select-none cursor-pointer"
+      onClick={() => {}}
+    >
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{desc}</CardDescription>

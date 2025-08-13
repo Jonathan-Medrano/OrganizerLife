@@ -1,28 +1,13 @@
-import React from "react";
-import CardDashboard from "./components/CardDashboard";
+import CardDashboard from "./components/CardsDashboard/CardDashboard";
+import Cards from "./components/CardsDashboard/Cards";
+import Grids from "./components/GridDashboard/Grids";
 
 export default function DashboardIndex() {
   return (
-    <div className="flex flex-col gap-14 justify-start items-center w-screen h-screen mt-14">
-      <div>
-        <h1>Organizer Life</h1>
-      </div>
-      <div className="flex flex-row gap-4">
-        <CardDashboard
-          title={"Finanzas"}
-          desc={
-            "Controla y Organiza tus Ingresos, Gastos y Finanzas con nuestro Sistema"
-          }
-        />
-        <CardDashboard
-          title={"Rutinas"}
-          desc={"Planifica tus Rutinas y Alarmas con nuestro Sistema."}
-        />
-        <CardDashboard
-          title={"Tareas/Notas"}
-          desc={"Crea Tareas o Notas para tener orden en todo lo que haces."}
-        />
-      </div>
+    <div className="max-w-max flex flex-col items-center justify-start">
+      <h1 className="text-3xl border-b-2 mb-8 border-black">ORGANIZER LIFE</h1>
+      <Cards />
+      <Grids />
     </div>
   );
 }
