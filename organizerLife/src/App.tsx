@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import DashboardIndex from "./pages/dashboard/Index";
+import Pomodoro from "./pages/Work/Apps/pomodoro";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className="mt-8 h-screen w-screen flex justify-center">
         <Routes>
           <Route path="/" element={<DashboardIndex />} />
+          <Route path="/pomodoro" element={<Pomodoro />} />
         </Routes>
       </div>
     </div>
